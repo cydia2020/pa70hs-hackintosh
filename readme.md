@@ -1,10 +1,10 @@
 **Hackintosh Files for Clevo PA70, Kabylake only**
 
 <br>*BIOS Settings:*</br>
-<br>TPM Enabled</br>
-<br>Graphics set to discrete only</br>
-<br>Quick boot set to On</br>
-<br>Thunderbolt Security set to legacy</br>
+<br>TPM Enabled
+<br>Graphics set to discrete only
+<br>Quick boot set to On
+<br>Thunderbolt Security set to legacy
 <br>VT-d set to On</br>
 
 <br>*DSDT Patches Applied:*</br>

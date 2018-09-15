@@ -11,26 +11,26 @@
 N/A
 
 <br>*SSDT Patches Applied:*</br>
-USBInjectAll SSDT
-CPU Power Management SSDT
+<br>USBInjectAll SSDT
+<br>CPU Power Management SSDT</br>
 
 <br>*Kexts Required:*</br>
-ACPIBatteryManager.kext
-AppleALC.kext
-ApplePS2SmartTouchPad.kext
-CPUFriend.kext (Not required)
-FakePCIID_XHCIMux.kext (Not required)
-FakePCIID.kext (Not required)
-FakeSMC_ACPISensors.kext
-FakeSMC_CPUSensors.kext
-FakeSMC_GPUSensors.kext
-FakeSMC_LPCSensors.kext
-FakeSMC.kext
-Lilu.kext
-NoTouchID.kext
-RealtekRTL8111.kext
-USBInjectAll.kext
-WhateverGreen.kext
+<br>ACPIBatteryManager.kext
+<br>AppleALC.kext
+<br>ApplePS2SmartTouchPad.kext
+<br>CPUFriend.kext (Not required)
+<br>FakePCIID_XHCIMux.kext (Not required)
+<br>FakePCIID.kext (Not required)
+<br>FakeSMC_ACPISensors.kext
+<br>FakeSMC_CPUSensors.kext
+<br>FakeSMC_GPUSensors.kext
+<br>FakeSMC_LPCSensors.kext
+<br>FakeSMC.kext
+<br>Lilu.kext
+<br>NoTouchID.kext
+<br>RealtekRTL8111.kext
+<br>USBInjectAll.kext
+<br>WhateverGreen.kext</br>
 
 <br>*Kexts-to-Patch Applied:*</br>
-Raise USB Port Limit for 10.13.6
+<br>Raise USB Port Limit for 10.13.6</br>

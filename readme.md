@@ -1,21 +1,20 @@
 **Hackintosh Files for Clevo PA70, Kabylake only**
 
-
-*BIOS Settings:*
+<br>*BIOS Settings:*</br>
 TPM Enabled
 Graphics set to discrete only
 Quick boot set to On
 Thunderbolt Security set to legacy
 VT-d set to On
 
-*DSDT Patches Applied*
+<br>*DSDT Patches Applied:*</br>
 N/A
 
-*SSDT Patches Applied*
+<br>*SSDT Patches Applied:*</br>
 USBInjectAll SSDT
 CPU Power Management SSDT
 
-*Kexts Required*
+<br>*Kexts Required:*</br>
 ACPIBatteryManager.kext
 AppleALC.kext
 ApplePS2SmartTouchPad.kext
@@ -33,5 +32,5 @@ RealtekRTL8111.kext
 USBInjectAll.kext
 WhateverGreen.kext
 
-*Kexts-to-Patch Applied*
+<br>*Kexts-to-Patch Applied:*</br>
 Raise USB Port Limit for 10.13.6

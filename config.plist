@@ -6,8 +6,39 @@
 	<dict>
 		<key>DSDT</key>
 		<dict>
+			<key>DropOEM_DSM</key>
+			<dict>
+				<key>ATI</key>
+				<false/>
+				<key>Firewire</key>
+				<false/>
+				<key>HDA</key>
+				<false/>
+				<key>HDMI</key>
+				<false/>
+				<key>IDE</key>
+				<false/>
+				<key>IntelGFX</key>
+				<false/>
+				<key>LAN</key>
+				<false/>
+				<key>LPC</key>
+				<false/>
+				<key>NVidia</key>
+				<false/>
+				<key>SATA</key>
+				<false/>
+				<key>SmBUS</key>
+				<true/>
+				<key>USB</key>
+				<false/>
+				<key>WIFI</key>
+				<false/>
+			</dict>
 			<key>Fixes</key>
 			<dict>
+				<key>DeleteUnused</key>
+				<true/>
 				<key>FakeLPC</key>
 				<false/>
 				<key>FixDisplay</key>
@@ -16,11 +47,17 @@
 				<true/>
 				<key>FixHPET</key>
 				<true/>
+				<key>FixRTC</key>
+				<true/>
+				<key>FixSATA</key>
+				<true/>
 				<key>FixSBUS</key>
 				<true/>
 				<key>FixShutdown</key>
 				<true/>
 			</dict>
+			<key>Name</key>
+			<string>DSDT.aml</string>
 			<key>Patches</key>
 			<array>
 				<dict>
@@ -41,6 +78,8 @@
 		</dict>
 		<key>SSDT</key>
 		<dict>
+			<key>DoubleFirstState</key>
+			<true/>
 			<key>EnableC2</key>
 			<true/>
 			<key>EnableC4</key>
@@ -51,17 +90,23 @@
 			<true/>
 			<key>Generate</key>
 			<dict>
+				<key>APLF</key>
+				<true/>
+				<key>APSN</key>
+				<true/>
 				<key>CStates</key>
 				<true/>
 				<key>PStates</key>
 				<true/>
 			</dict>
+			<key>UseSystemIO</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>alcid=28 rootless=0 darkwake=0 nvda_drv=1 kext-dev-mode=1</string>
+		<string>alcid=28 rootless=0 darkwake=0 nvda_drv=1 -v kext-dev-mode=1</string>
 		<key>DefaultVolume</key>
 		<string>Hackintosh HD</string>
 		<key>DisableCloverHotkeys</key>
@@ -84,6 +129,11 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
+		<key>Audio</key>
+		<dict>
+			<key>ResetHDA</key>
+			<true/>
+		</dict>
 		<key>LANInjection</key>
 		<false/>
 		<key>USB</key>
@@ -144,6 +194,10 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
+		<key>AppleIntelCPUPM</key>
+		<false/>
+		<key>AppleRTC</key>
+		<false/>
 		<key>KernelPm</key>
 		<true/>
 		<key>KextsToPatch</key>
@@ -166,6 +220,24 @@
 				<key>Replace</key>
 				<data>
 				g32ID5CQkJCQkA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AEFQUExFIFNTRAA=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAAAAAAAA=
 				</data>
 			</dict>
 		</array>

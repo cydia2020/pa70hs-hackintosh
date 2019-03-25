@@ -1,5 +1,10 @@
 ***Strictly for PA70s with disableable Intel GPU (Choose discrete in BIOS), this setup documented in this repository WILL NOT work with *MSHybrid*, you will have to generate your own DSDT / SSDT in that case, ALTER CONFIG AS NEEDED***
 
+
+**Use USB 2.0 While Installing**
+**Do NOT use Lilu and its Plugins While Installing**
+**Use AptioMemoryFix3**
+
 **Hackintosh Files for Clevo PA70, Kabylake only**
 
 **Things that are pRoBleMatIc**

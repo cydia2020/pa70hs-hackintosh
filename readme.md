@@ -2,6 +2,11 @@
 
 **Hackintosh Files for Clevo PA70, Kabylake only**
 
+**Things that are pRoBleMatIc**
+<br>Thunderbolt</br>
+<br>Card Reader</br>
+
+
 <br>*BIOS Settings:*</br>
 <br>TPM Enabled
 <br>Graphics set to discrete only

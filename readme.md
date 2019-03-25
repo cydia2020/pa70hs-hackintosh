@@ -1,3 +1,5 @@
+***Strictly for PA70s with disableable Intel GPU (Choose discrete in BIOS), this will not work with Intel GPU, you will have to generate your own DSDT / SSDT in that case, ALTER CONFIG AS NEEDED***
+
 **Hackintosh Files for Clevo PA70, Kabylake only**
 
 <br>*BIOS Settings:*</br>

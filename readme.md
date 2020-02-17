@@ -1,3 +1,5 @@
+Deprecated as nvidia support has ceased for macOS
+
 ***Strictly for PA70s with disableable Intel GPU (Choose discrete in BIOS), the setup documented in this repository WILL NOT work with *MSHybrid*, you will have to generate your own DSDT / SSDT in that case, ALTER CONFIG AS NEEDED***
 
 
